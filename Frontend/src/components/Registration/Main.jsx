@@ -26,7 +26,7 @@ function Main() {
     formData.append("CV", form.CV);
 
     try {
-      let response = await fetch("http://localhost:8000/registration", {
+      let response = await fetch("https://aichergipt.com/registration", {
         method: "POST",
         body: formData,
       });
