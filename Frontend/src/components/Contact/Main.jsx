@@ -19,7 +19,7 @@ function Main() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      let response = await fetch("http://localhost:8000/Contact", {
+      let response = await fetch("https://aichergipt.com/Contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
