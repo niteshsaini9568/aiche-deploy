@@ -19,7 +19,7 @@ function Merchandise() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      let response = await fetch("http://localhost:8000/buy", {
+      let response = await fetch("https://aichergipt.com/buy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
