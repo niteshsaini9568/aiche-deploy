@@ -9,8 +9,11 @@ import Slider from "./slider";
 import History from "./History";
 import President from "./president";
 import Faq from "./faq";
-import Testimonials from "./student-voice";
+import Voices from "./Visionary";
+import Testimonials from "./Vision";
+// import Testimonial18 from "./student-voice";
 import Footer from "../internal-components/footer";
+import Testimonial18 from './student-voice';
 
 
 function Home() {
@@ -26,6 +29,8 @@ function Home() {
       <About />
       <Slider />
       <President />
+      <Voices />
+      <Testimonial18 />
       <History />
       <Faq />
       <Testimonials />

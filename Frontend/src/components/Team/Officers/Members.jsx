@@ -4,7 +4,7 @@ function Members() {
   return (
     <div className="md:px-20 px-5 py-10 ">
       <h1 className="text-amber-600 text-3xl md:text-4xl font-bold my-4 mt-10 mb-10 text-center">
-        Team Leaders
+        Team Officers
       </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
@@ -95,7 +95,7 @@ function Members() {
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
             <img
-              src="../../aditya.jpg"
+              src="../../aditya_k.jpg"
               alt="Aditya Kashyap"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
@@ -129,7 +129,7 @@ function Members() {
           </div>
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
             <img
-              src="../../mayank2.JPG"
+              src="../../Mayank1.jpg"
               alt="Mayank Gupta"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
@@ -173,7 +173,7 @@ function Members() {
             <div className="text-lg font-black mb-2">Upasana Yadav</div>
             <a
               className="btn bg-amber-300 text-amber-800 hover:bg-amber-400 px-4 py-2 rounded-xl"
-              href="https://www.linkedin.com/in/adityakashyap2006/"
+              href="https://www.linkedin.com/in/upasana-yadav-678333263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             >
               KNOW MORE
             </a>
@@ -200,15 +200,15 @@ function Members() {
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
             <img
               src="../../aditya-k.jpg"
-              alt="Aditya kumar"
+              alt="Aditya Kumar"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
 
             <time className="font-mono italic">Event Management</time>
-            <div className="text-lg font-black mb-2">Aditya kumar</div>
+            <div className="text-lg font-black mb-2">Aditya Kumar</div>
             <a
               className="btn bg-amber-300 text-amber-800 hover:bg-amber-400 px-4 py-2 rounded-xl"
-              href="https://www.linkedin.com/in/aditya-kumar-35b5a1262/"
+              href="https://www.linkedin.com/in/aditya-kumar-2668a4257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             >
               KNOW MORE
             </a>
@@ -304,7 +304,7 @@ function Members() {
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
             <img
-              src="../../mansi.jpeg"
+              src="../../mansisi.jpg"
               alt="Mansi Sisodiya"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
@@ -313,7 +313,7 @@ function Members() {
             <div className="text-lg font-black mb-2">Mansi Sisodiya</div>
             <a
               className="btn bg-amber-300 text-amber-800 hover:bg-amber-400 px-4 py-2 rounded-xl"
-              href="https://www.linkedin.com/in/adityakashyap2006/"
+              href="https://www.linkedin.com/in/mansi-sisodiya-1431b3259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             >
               KNOW MORE
             </a>

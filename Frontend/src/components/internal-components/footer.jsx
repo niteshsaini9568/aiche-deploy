@@ -74,7 +74,8 @@ function Footer() {
 
         <nav>
           <h6 className="footer-title">Website Developed By</h6>
-          <img src="../../signature.png" className="w-32 h-10 mb-4"></img>
+          <img src="./sign5.png" className="w-32 h-20 mb-4 "></img>
+          {/* <img src="../../signature.png" className="w-32 h-10 mb-4"></img> */}
           <h6 className="footer-title">Contact me </h6>
           <div className="grid grid-flow-col gap-4 items-center">
             <a href="https://my-portfolio-qpv9.onrender.com/">

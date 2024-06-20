@@ -1,130 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
-function Testimonials() {
-  return (
-    <section className="bg-gray-100 text-gray-800 px-4 md:px-20">
-      <div className=" px-6 py-12 mx-auto">
-        <div className="grid items-center gap-4 xl:grid-cols-5">
-          <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-            <h2 className=" text-amber-600 text-3xl font-extrabold">
-              Voices of AIChE-RGIPT : Hear What Our Members Say
-            </h2>
-            <p className="text-gray-600 text-left">
-              Dive into the heartfelt experiences and reflections of our RGIPT
-              AIChE Student Chapter members. Discover how our community has
-              enriched their academic journey, empowered their professional
-              growth, and fostered lasting friendships. From inspiring events to
-              collaborative projects, explore the diverse perspectives that
-              shape our vibrant chapter. Join us in celebrating the voices that
-              make our community thrive.
-            </p>
-          </div>
-          <div className="p-0 md:p-6 xl:col-span-3">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="grid content-center gap-4 ">
-                <div className="p-6 rounded shadow-md bg-gray-50 container">
-                  <p>
-                    Two years now working with the AIChE-RGIPT fraternity and I
-                    have seen it only growing in stature... Hi, I am Arik Parui,
-                    the current Overall Coordinator of the chapter. Working with
-                    this chapter has been a real life-altering experience for me
-                    by all measures . Our chapter
-                    nurtures the students to achieve height of the success.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4 ">
-                    <img
-                      src="../../arik.jpg"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold text-amber-600">
-                        Arik Parui
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        Overall coordinator
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6 rounded shadow-md bg-gray-50 container">
-                  <p>
-                    Being part of the AIChE-RGIPT Student Chapter community has
-                    been such a wonderful and collaborative experience.
-                    Interacting with motivated individuals, contributing to
-                    exciting events, and sharing knowledge has been incredibly
-                    fulfilling. It's a supportive environment where learning and
-                    growth truly flourish.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="../../mayank2.JPG"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold text-amber-600">
-                        Mayank Gupta
-                      </p>
-                      <p className="text-sm text-gray-600">Editorial Officer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="grid content-center gap-4">
-                <div className="p-6 rounded shadow-md bg-gray-50 container">
-                  <p>
-                    Grab as many opportunities as you got !!" As a member of the
-                    International Relations Committee, I love connecting with
-                    people globally. It's been an amazing journey that's helped
-                    me grow and learn so much about the field. Working with such
-                    fantastic colleagues has made the taste of success even
-                    sweeter.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="../../harshit.JPG"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold text-amber-600">
-                        Harshit Vishwakarma
-                      </p>
-                      <p className="text-sm text-gray-600">IR officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6 rounded shadow-md bg-gray-50 container">
-                  <p>
-                    Serving as the Event Management officer for the AIChE RGIPT
-                    Student Chapter has been one of the most rewarding and
-                    transformative experiences of my college life. This role not
-                    only allowed me to contribute to the vibrant campus culture
-                    but also helped me develop essential skills and forge
-                    meaningful connections.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="../../aditya-k.jpg"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold text-amber-600">
-                        Aditya kumar
-                      </p>
-                      <p className="text-sm text-gray-600">Event Management</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
-export default Testimonials;
+const testimonialList = [
+	{
+		img: "devesh.jpg",
+		name: "Devesh Vishwakarma",
+		position: "Volunteer Chair, AIChE-RGIPT",
+		content:
+			"Hello, I am Devesh Vishwakarma, the Volunteer Chair of the AIChE-RGIPT Student Chapter. Being associated with AIChE-RGIPT for almost 3 years now. AIChE-RGIPT is a premium student body to hone one’s professional skills and learn about real-world working scenarios. With the launch of this new platform, I hope we connect and collaborate towards unprecedented heights of success...",
+	},
+	
+	{
+		img : "./ankit.jpg",
+		name: "Ankit Kumar Gupta",
+		position: "Vice-President, AIChE-RGIPT",
+		content:
+			"Hi, I am Ankit Kumar Gupta, currently the Vice President of the AIChE-RGIPT Student Chapter. I am elated to welcome you all to our latest platform, the official AIChE-RGIPT website. Our chapter aims to nurture and provides the perfect pathway for our students to succeed in the ever evolving field of  chemical engineering. Welcome once again to the AIChE-RGIPT community!",
+	},
+	{
+		img: "./Bhavani.jpg",
+		name: "Bhavani Narayanasetti",
+		position: "Joint Secretary-External Affairs, AIChE-RGIPT",
+		content:
+			"Hello and welcome to the official website of the AIChE-RGIPT Student Chapter, I am Bhavani Narayanasetti, the Joint secretary of external affairs. Serving the chapter for the past couple of years, I have seen it only growing in stature...I invite you all to collaborate and explore our community and foster the sense of collaboration even further...",
+	},
+	
+	{
+		img: "./nimisha.jpg",
+		name: "Nimisha Verma",
+		position: "Joint Secretary-Internal Affairs, AIChE-RGIPT",
+		content:
+			"A warm welcome to the official website of the AIChE-RGIPT Student Chapter! I am Nimisha Verma, the Joint Secretary of Internal Affairs. Our fraternity focuses on member engagement, fostering a collaborative environment to drive the chapter towards success. Let's connect and explore some never seen before peaks of success...",
+	},
+	
+	
+];
+
+const Testimonial18 = () => {
+	const [index, setIndex] = useState(0);
+	const { img, name, position, content } = testimonialList[index];
+
+	const handleSelect = (selectedIndex) => setIndex(selectedIndex);
+	
+	  
+
+	return (
+		
+		<section className="ezy__testimonial18 light py-14 md:py-10 bg-white  text-zinc-900 dark:text-black z-[1]">
+			<div className=" px-4 mx-auto">
+				<div>
+					<div>
+						<p className="relative text-xl md:text-[20px] leading-10 font-bold mb-6 md:mb-12 text-center z-[1]">
+							<FontAwesomeIcon
+								icon={faQuoteLeft}
+								className="absolute -top-20 left-0 md:-top-1/2 text-[70px] text-yellow-600 text-opacity-50 -z-[1]"
+							/>
+							{content}
+							<FontAwesomeIcon
+								icon={faQuoteRight}
+								className="absolute -bottom-20 right-0 md:-bottom-1/3 text-[70px] text-yellow-600 text-opacity-50 -z-[1]"
+							/>
+						</p>
+						<div className="text-center">
+							<div className="mr-3">
+								<img
+									src={img}
+									alt={name}
+									className="w-20 h-20 rounded-full mb-4 mx-auto"
+								/>
+							</div>
+							<div>
+								<h4 className="text-xl font-medium mb-2">{name}</h4>
+
+								<p className="opacity-80">{position}</p>
+							</div>
+						</div>
+					</div>
+					<div className="flex justify-center gap-2 m-0 mt-12">
+						{testimonialList.map((item, i) => (
+							<button
+								className={`w-3 h-3 rounded-full ${
+									index === i
+										? "scale-125 bg-yellow-600"
+										: " bg-gray-400 dark:bg-slate-800"
+								} `}
+								key={i}
+								onClick={() => handleSelect(i)}
+							/>
+						))}
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
+export default Testimonial18;
