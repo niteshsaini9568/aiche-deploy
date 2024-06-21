@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function National() {
   return (
@@ -10,7 +15,9 @@ function National() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 md:mx-24 mb-20">
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../National/1.png"
               alt="AIChE SVNIT Interaction"
               className="rounded-xl"
@@ -27,7 +34,9 @@ function National() {
 
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../National/2.png"
               alt="AIChE GSFCU SC Interaction"
               className="rounded-xl"
@@ -44,7 +53,9 @@ function National() {
 
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../National/3.png"
               alt="AIChE BMSCE SC Interaction"
               className="rounded-xl"
@@ -61,7 +72,9 @@ function National() {
 
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../National/6.png"
               alt="AIChE VIT SC Interaction"
               className="rounded-xl"
@@ -76,11 +89,11 @@ function National() {
           </div>
         </div>
 
-        
-
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../Events/6.png"
               alt="AIChE VIT SC Interaction"
               className="rounded-xl"
@@ -102,4 +115,4 @@ function National() {
   );
 }
 
-export default National;
+export default trackWindowScroll(National);

@@ -48,19 +48,19 @@ const Testimonial18 = () => {
 
 	return (
 		
-		<section className="ezy__testimonial18 light py-14 md:py-10 bg-white  text-zinc-900 dark:text-black z-[1]">
+		<section className="ezy__testimonial18 light py-14 md:py-10 bg-white  text-zinc-900 dark:text-black z-[1] md:mx-20">
 			<div className=" px-4 mx-auto">
 				<div>
 					<div>
-						<p className="relative text-xl md:text-[20px] leading-10 font-bold mb-6 md:mb-12 text-center z-[1]">
+						<p className="relative text-md md:text-[20px]  font-bold mb-6 md:mb-12 text-center z-[1]">
 							<FontAwesomeIcon
 								icon={faQuoteLeft}
-								className="absolute -top-20 left-0 md:-top-1/2 text-[70px] text-yellow-600 text-opacity-50 -z-[1]"
+								className="absolute -top-20 left-0 md:-top-3/4 text-[70px] text-yellow-600 text-opacity-50 -z-[1]"
 							/>
 							{content}
 							<FontAwesomeIcon
 								icon={faQuoteRight}
-								className="absolute -bottom-20 right-0 md:-bottom-1/3 text-[70px] text-yellow-600 text-opacity-50 -z-[1]"
+								className="absolute -bottom-20 right-0 md:-bottom-2/3 text-[70px] text-yellow-600 text-opacity-50 -z-[1]"
 							/>
 						</p>
 						<div className="text-center">

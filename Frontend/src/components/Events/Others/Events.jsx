@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Events() {
   const events = [
@@ -87,7 +92,9 @@ function Events() {
             className="card w-full bg-base-100 shadow-xl container"
           >
             <figure className="px-10 pt-10">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src={event.image}
                 alt={event.title}
                 className="rounded-xl w-96 h-72"
@@ -104,4 +111,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default trackWindowScroll(Events);

@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 function International() {
   return (
@@ -10,7 +16,9 @@ function International() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 md:mx-24">
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../International/1.png"
               alt="AIChE BUET SC Interaction"
               className="rounded-xl h-80 w-96"
@@ -26,7 +34,9 @@ function International() {
         </div>
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../Events/5.png"
               alt="AIChE Unal Med SC Interaction"
               className="rounded-xl h-80 w-96"
@@ -42,11 +52,12 @@ function International() {
             </p>
           </div>
         </div>
-       
 
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10 ">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../International/3.png"
               alt="AIChE BPDC SC Interaction"
               className="rounded-xl h-80 w-96"
@@ -63,7 +74,9 @@ function International() {
 
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../International/4.png"
               alt="AIChE UFU SC Interaction"
               className="rounded-xl h-80 w-96"
@@ -80,7 +93,9 @@ function International() {
 
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../International/5.png"
               alt="AIChE Unal Med SC Interaction"
               className="rounded-xl h-80 w-96"
@@ -96,7 +111,9 @@ function International() {
         </div>
         <div className="card w-full bg-base-100 shadow-xl container">
           <figure className="px-10 pt-10">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../International/2.png"
               alt="AIChE TUFTS SC Interaction"
               className="rounded-xl h-80 w-96"
@@ -110,11 +127,9 @@ function International() {
             </p>
           </div>
         </div>
-       
-
       </div>
     </>
   );
 }
 
-export default International
+export default trackWindowScroll(International);

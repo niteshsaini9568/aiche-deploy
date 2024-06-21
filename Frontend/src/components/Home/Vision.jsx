@@ -4,7 +4,7 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <section className="bg-gray-100 text-gray-800 px-4 md:px-20">
+    <section className="bg-gray-100 text-gray-800 px-4 md:p x-20">
       <div className=" px-6 py-12 mx-auto">
         <div className="grid items-center gap-4 xl:grid-cols-5">
           <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
@@ -60,7 +60,7 @@ function Testimonials() {
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <img
-                      src="../../mayank2.JPG"
+                      src="../../mayank2.jpg"
                       alt=""
                       className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
                     />

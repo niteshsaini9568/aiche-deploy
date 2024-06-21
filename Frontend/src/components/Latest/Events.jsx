@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Events() {
   return (
@@ -8,7 +13,9 @@ function Events() {
       </h1>
       <div className="flex flex-col md:flex-row justify-center items-top bg-base-100 rounded-3xl overflow-hidden">
         <figure className="w-full md:w-2/5">
-          <img
+          <LazyLoadImage
+            effect={"blur"}
+            threshold={100}
             src="../../Latest/1.png"
             alt="Network Nexus Event"
             className="rounded-3xl w-full h-auto object-cover mt-8"
@@ -90,4 +97,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default trackWindowScroll(Events);

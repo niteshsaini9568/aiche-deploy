@@ -1,10 +1,17 @@
 import React from 'react';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Template(props) {
   return (
     <div className="md:mx-20 mx-5 md:my-40 my-10 manual-shadow2 md:p-10 md:py-16 py-5 rounded-2xl bg-lime-100">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img
+        <LazyLoadImage
+          effect={"blur"}
+          threshold={100}
           src={props.image}
           className="md:max-w-sm rounded-lg shadow-2xl md:m-5 m-2"
           alt="Award"
@@ -28,4 +35,4 @@ function Template(props) {
   );
 }
 
-export default Template;
+export default trackWindowScroll(Template);

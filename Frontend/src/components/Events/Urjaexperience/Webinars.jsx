@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Webinars() {
   return (
@@ -18,7 +23,9 @@ function Webinars() {
         <div className="flex-col flex md:flex-row justify-center items-center">
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../Urjaexperience/1.jpg"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"
@@ -43,7 +50,9 @@ function Webinars() {
           </div>
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../Urjaexperience/2.jpg"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"
@@ -68,7 +77,9 @@ function Webinars() {
           </div>
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../Urjaexperience/7.jpg"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"

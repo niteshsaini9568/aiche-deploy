@@ -1,4 +1,9 @@
 import React from 'react'
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Members() {
   return (
@@ -23,10 +28,11 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
-              src="../../astha.JPG"
-              alt="Astha Yadav
- "
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
+              src="../../astha.jpg"
+              alt="Astha Yadav"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
 
@@ -60,7 +66,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../vishal.jpg"
               alt="VISHAL TIWARI"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -94,7 +102,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../aditya_k.jpg"
               alt="Aditya Kashyap"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -128,7 +138,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../Mayank1.jpg"
               alt="Mayank Gupta"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -163,7 +175,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../upasna.jpg"
               alt="Upasana Yadav"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -198,7 +212,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../aditya-k.jpg"
               alt="Aditya Kumar"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -233,8 +249,10 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
-              src="../../rajnandani.JPG"
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
+              src="../../rajnandani.jpg"
               alt="Rajnandani"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
@@ -268,7 +286,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../arin.jpg"
               alt="Arin Kumar"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -303,7 +323,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../mansisi.jpg"
               alt="Mansi Sisodiya"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -338,8 +360,10 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
-              src="../../ayush.JPG"
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
+              src="../../ayush.jpg"
               alt="Ayush Patel"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
@@ -373,7 +397,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../adarsh.jpg"
               alt="Ayush Patel"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -408,8 +434,10 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
-              src="../../satyam.JPG"
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
+              src="../../satyam.jpg"
               alt="Satyam"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
             />
@@ -443,7 +471,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../khushi.jpg"
               alt="khushi"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -478,7 +508,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-end md:w-80 w-72 md:text-end mb-10 mx-4 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../Sreenidhi.jpg"
               alt="Sreenidhi"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -513,7 +545,9 @@ function Members() {
             </svg>
           </div>
           <div className="timeline-start md:w-80 w-72 rounded-3xl manual-shadow p-4 flex justify-center items-center flex-col bg-slate-50">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../gunjan.jpeg"
               alt="Gunjan Kumari"
               className="object-cover h-32 w-32 rounded-full my-2 manual-shadow2 rotate-on-hover"
@@ -535,4 +569,4 @@ function Members() {
   );
 }
 
-export default Members
+export default trackWindowScroll(Members);

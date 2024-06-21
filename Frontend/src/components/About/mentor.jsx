@@ -1,13 +1,20 @@
 import React from 'react'
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function mentor() {
   return (
     <div>
       <div className="hero bg-base-200 md:px-0 px-5 lg:py-16">
         <div className="hero-content flex-col-reverse  lg:flex-row-reverse">
-          <img
-           src="../../change/mentor.jpg"
-           className="md:max-w-lg rounded-lg shadow-2xl w-96"
+          <LazyLoadImage
+            effect={"blur"}
+            threshold={100}
+            src="../../change/mentor.jpg"
+            className="md:max-w-lg rounded-lg shadow-2xl w-96"
           />
           <div>
             <h1 className="md:text-5xl font-bold text-3xl">
@@ -31,4 +38,4 @@ function mentor() {
   );
 }
 
-export default mentor
+export default trackWindowScroll(mentor);

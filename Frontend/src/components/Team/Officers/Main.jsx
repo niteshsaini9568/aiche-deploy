@@ -1,4 +1,9 @@
 import React from 'react'
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Main() {
   return (
@@ -6,12 +11,18 @@ function Main() {
       <div>
         <div className="relative h-full mx-4 sm:mx-6 md:mx-8 lg:mx-12 my-2 shadow-lg">
           <div
-            className="absolute inset-0 bg-cover bg-center rounded-2xl brightness-50"
-            style={{
-              backgroundImage: `url('../../group.JPG')`,
-              height: "83vh",
-            }}
-          ></div>
+            className="absolute inset-0 rounded-2xl overflow-hidden"
+            style={{ height: "83vh" }}
+          >
+            <LazyLoadImage
+              src="../../group.jpg" // Ensure this path is correct
+              alt="Banner Background"
+              effect="blur"
+              className="w-full h-full object-cover brightness-50"
+              style={{ height: "100vh", width: "93vw" }}
+            />
+          </div>
+
           <div
             className="relative flex items-center justify-center flex-col bg-slate-900 bg-opacity-40 lg:px-20 md:px-16 sm:px-10 px-6 mt-24 rounded-2xl"
             style={{ height: "83vh" }}
@@ -20,10 +31,9 @@ function Main() {
               Meet Our Inspiring Team
             </h1>
             <p className="text-slate-50 text-center font-semibold my-3 text-lg sm:text-xl lg:text-xl">
-              Discover
-              the talented individuals who drive our success. Our team combines
-              diverse skills and passions, working together to innovate and
-              excel. Get to know the faces behind our achievements and the
+              Discover the talented individuals who drive our success. Our team
+              combines diverse skills and passions, working together to innovate
+              and excel. Get to know the faces behind our achievements and the
               unique contributions they bring to our vibrant community.
             </p>
           </div>
@@ -33,4 +43,4 @@ function Main() {
   );
 }
 
-export default Main
+export default trackWindowScroll(Main);

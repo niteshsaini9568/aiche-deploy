@@ -1,4 +1,9 @@
 import React from 'react'
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Leaders() {
   return (
@@ -15,7 +20,9 @@ function Leaders() {
       <div className="flex justify-center items-center flex-wrap gap-8">
         <div className="flex flex-col items-center gap-4 w-52 h-72 shadow-xl rounded-3xl container">
           <div className="h-32 w-full flex flex-col items-center">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../Bhavani.jpg"
               alt="Bhavani Narayanasetti"
               className="object-cover h-32 rounded-full mt-2 manual-shadow2"
@@ -37,7 +44,9 @@ function Leaders() {
 
         <div className="flex flex-col items-center gap-4 w-52 h-72 shadow-xl rounded-3xl container">
           <div className="h-32 w-full flex flex-col items-center ">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../ankit.jpg"
               alt="Ankit Kumar Gupta"
               className="object-cover h-32 rounded-full mt-2 manual-shadow2"
@@ -55,7 +64,9 @@ function Leaders() {
 
         <div className="flex flex-col items-center gap-4 w-56 h-72 shadow-xl rounded-3xl container">
           <div className="h-32 w-full flex flex-col items-center ">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../president.jpg"
               alt="Siddhanth Chatterjee"
               className="object-cover h-32 rounded-full mt-2 manual-shadow2"
@@ -73,7 +84,9 @@ function Leaders() {
 
         <div className="flex flex-col items-center gap-4 w-52 h-72 shadow-xl rounded-3xl container">
           <div className="h-32 w-full flex flex-col items-center">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../devesh.jpg"
               alt="Devesh Vishwakarma"
               className="object-cover h-32 rounded-full mb-10 manual-shadow2"
@@ -91,7 +104,9 @@ function Leaders() {
 
         <div className="flex flex-col items-center gap-4 w-52 h-72 shadow-xl rounded-3xl container">
           <div className="h-32 w-full flex flex-col items-center">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="../../nimisha.jpg"
               alt="Nimisha Verma"
               className="object-cover h-32 rounded-full mt-2 manual-shadow2"
@@ -113,4 +128,4 @@ function Leaders() {
   );
 }
 
-export default Leaders
+export default trackWindowScroll(Leaders);

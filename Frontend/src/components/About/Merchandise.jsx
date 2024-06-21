@@ -1,6 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Merchandise() {
   const [form, setForm] = useState({
@@ -50,49 +55,63 @@ function Merchandise() {
       <div className="flex justify-center items-center">
         <div className="carousel carousel-center max-w-6xl p-4 mb-10 space-x-4 bg-amber-100 rounded-box">
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt1.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 1"
             />
           </div>
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt2.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 2"
             />
           </div>
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt3.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 3"
             />
           </div>
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt4.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 4"
             />
           </div>
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt5.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 5"
             />
           </div>
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt1.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 1"
             />
           </div>
           <div className="carousel-item">
-            <img
+            <LazyLoadImage
+              effect={"blur"}
+              threshold={100}
               src="/t-shirt2.jpg"
               className="rounded-box h-96 w-96"
               alt="T-shirt 2"
@@ -176,4 +195,4 @@ function Merchandise() {
   );
 }
 
-export default Merchandise;
+export default trackWindowScroll(Merchandise);

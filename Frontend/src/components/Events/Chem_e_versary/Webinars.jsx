@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Webinars() {
   return (
@@ -21,8 +26,10 @@ function Webinars() {
         <div className="flex-col flex md:flex-row justify-center items-center">
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
-                src="../../Chem-e-versary/11.JPG"
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
+                src="../../Chem-e-versary/11.jpg"
                 className="rounded-2xl h-56"
                 alt="Competitive gaming"
               />
@@ -44,8 +51,10 @@ function Webinars() {
 
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
-                src="../../Chem-e-versary/13.JPG"
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
+                src="../../Chem-e-versary/13.jpg"
                 className="rounded-2xl h-56"
                 alt="Competitive gaming"
               />
@@ -67,7 +76,9 @@ function Webinars() {
 
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../k12(4).jpg"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"
@@ -83,15 +94,14 @@ function Webinars() {
                 scalability potential. While winners emerged, every participant
                 left with enhanced confidence and resolve. The Pitch Tank event
                 not only hailed innovation but also nurtured an entrepreneurial
-                ethos and creativity at RGIPT. 
+                ethos and creativity at RGIPT.
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   );
 }
 
-export default Webinars;
+export default trackWindowScroll(Webinars);

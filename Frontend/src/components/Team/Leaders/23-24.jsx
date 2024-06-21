@@ -48,7 +48,7 @@ function Leaders() {
         <div className="flex flex-col items-center gap-4 w-56 h-72 shadow-xl rounded-3xl container">
           <div className="h-32 w-full flex flex-col items-center ">
             <img
-              src="../../Leaderboard/1.JPG"
+              src="../../Leaderboard/1.jpg"
               alt="Dhruv Mishra"
               className="object-cover h-32 w-32 rounded-full mt-2 manual-shadow2"
             />

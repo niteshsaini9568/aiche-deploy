@@ -5,28 +5,28 @@ function slider() {
     <div>
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full rounded-3xl">
-          <img src="../../img11.JPG" className="w-full image" />
+          <img src="../../img11.jpg" className="w-full image" />
         </div>
         <div id="item2" className="carousel-item w-full rounded-3xl">
-          <img src="../../img2.JPG" className="w-full image" />
+          <img src="../../img2.jpg" className="w-full image" />
         </div>
         <div id="item3" className="carousel-item w-full rounded-3xl">
-          <img src="../../img6.JPG" className="w-full image" />
+          <img src="../../img6.jpg" className="w-full image" />
         </div>
         <div id="item4" className="carousel-item w-full rounded-3xl">
-          <img src="../../img7.JPG" className="w-full image" />
+          <img src="../../img7.jpg" className="w-full image" />
         </div>
         <div id="item5" className="carousel-item w-full rounded-3xl">
-          <img src="../../img8.JPG" className="w-full image" />
+          <img src="../../img8.jpg" className="w-full image" />
         </div>
         <div id="item6" className="carousel-item w-full rounded-3xl">
-          <img src="../../img9.JPG" className="w-full image" />
+          <img src="../../img9.jpg" className="w-full image" />
         </div>
         <div id="item7" className="carousel-item w-full rounded-3xl">
-          <img src="../../img10.JPG" className="w-full image" />
+          <img src="../../img10.jpg" className="w-full image" />
         </div>
         <div id="item8" className="carousel-item w-full rounded-3xl">
-          <img src="../../img1.JPG" className="w-full image" />
+          <img src="../../img1.jpg" className="w-full image" />
         </div>
       </div>
       <div className="flex justify-center w-full py-2 gap-2">

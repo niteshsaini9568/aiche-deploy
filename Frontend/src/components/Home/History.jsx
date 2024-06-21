@@ -1,8 +1,13 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function History() {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center mx-5 lg:mx-20 md:my-4 lg:space-y-0 lg:space-x-10 sm:-my-10 ">
+    <div className="flex flex-col lg:flex-row justify-center items-center mx-5 lg:mx-20 md:my-10 lg:space-y-0 lg:space-x-10 sm:-my-10 ">
       <div className="left lg:w-1/2">
         <h1 className="text-amber-600 text-4xl font-bold md:my-4 md:mt-10  text-center lg:text-left">
           Our chapter History
@@ -20,20 +25,26 @@ function History() {
       </div>
       <div className="right flex flex-col justify-center items-center lg:w-1/2 space-y-4">
         <div className="upper-img w-full">
-          <img
-            src="../../img8.JPG"
-            className="h-60 w-full rounded-lg shadow-lg object-cover"
+          <LazyLoadImage
+            effect={"blur"}
+            threshold={100}
+            src="../../img8.jpg"
+            className="h-60 md:w-[45vw] w-96 rounded-lg shadow-lg object-cover"
             alt="History Image 1"
           />
         </div>
         <div className="lower-img flex justify-center items-center lg:space-x-5 space-x-0 space-y-4 lg:flex-row flex-col">
-          <img
-            src="../../img6.JPG"
+          <LazyLoadImage
+            effect={"blur"}
+            threshold={100}
+            src="../../img6.jpg"
             className="h-60 w-96 rounded-lg shadow-lg object-cover"
             alt="History Image 2"
           />
-          <img
-            src="../../img7.JPG"
+          <LazyLoadImage
+            effect={"blur"}
+            threshold={100}
+            src="../../img7.jpg"
             className="h-60 lg:w-60 w-96 rounded-lg shadow-lg object-cover"
             alt="History Image 3"
           />
@@ -43,4 +54,4 @@ function History() {
   );
 }
 
-export default History;
+export default trackWindowScroll(History);

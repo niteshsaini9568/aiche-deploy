@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 function Webinars() {
   return (
@@ -18,7 +24,9 @@ function Webinars() {
         <div className="flex-col flex md:flex-row justify-center items-center">
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../k12(2).png"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"
@@ -41,7 +49,9 @@ function Webinars() {
           </div>
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../k12(3).jpg"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"
@@ -65,7 +75,9 @@ function Webinars() {
 
           <div className="card md:w-96 bg-base-100 manual-shadow2 container m-4 rounded-2xl">
             <div className="card-body">
-              <img
+              <LazyLoadImage
+                effect={"blur"}
+                threshold={100}
                 src="../../Events/9.png"
                 className="rounded-2xl h-56"
                 alt="Online Sessions"
@@ -75,14 +87,14 @@ function Webinars() {
                 Hands-On Learning
               </h2>
               <p>
-                Our offline event for K-12 , featured fun experiments
-                like "Denser Than You Think" and "Balloon Inflation." These
+                Our offline event for K-12 , featured fun experiments like
+                "Denser Than You Think" and "Balloon Inflation." These
                 activities helped students understand scientific concepts
-                practically. Designed without  lab equipment, these
-                experiments made learning engaging and accessible, demonstrating
-                that science can be both fun and informative outside traditional
-                classroom settings.This provides a platform
-                for visualizing concepts.
+                practically. Designed without lab equipment, these experiments
+                made learning engaging and accessible, demonstrating that
+                science can be both fun and informative outside traditional
+                classroom settings.This provides a platform for visualizing
+                concepts.
               </p>
             </div>
           </div>
@@ -92,4 +104,4 @@ function Webinars() {
   );
 }
 
-export default Webinars;
+export default trackWindowScroll(Webinars);

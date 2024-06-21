@@ -28,13 +28,10 @@ function Achievements() {
           <Award1 />
           <Award2 />
           <Award3 />
-          
           <Award5 />
           <Award6 />
           <Award7 />
-         
           <Award10 />
-         
           <Award12 />
           <Award13 />
           <Award14 />
